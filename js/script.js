@@ -806,20 +806,3 @@ document.querySelector('.report').addEventListener('submit', (e) => {
 
 const currentYear = new Date().getFullYear()
 document.querySelector('.footerCopyright > p span').innerText = currentYear
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
