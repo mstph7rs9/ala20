@@ -28,7 +28,7 @@ const observer = new IntersectionObserver((entries) => {
         button.classList.remove('scrolledButton')
         menu.classList.remove('scrolledMenu')
     }
-}, { threshold: 0.75 })
+}, { threshold: 0.8 })
 observer.observe(hero)
 
 const menu = document.querySelector('.menu')
@@ -50,7 +50,7 @@ function smooth () {
     menu.classList.remove('smooth')
     setTimeout(() => {
         menu.classList.add('smooth')
-    }, 10)
+    }, 100)
 }
 
 const button1 = document.querySelector('.button1')
@@ -480,7 +480,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('.point').classList.add('cer')
                 document.querySelector('.points').classList.toggle('cer')
             }
-        }, 10)
+        }, 100)
         
     })
 
@@ -514,7 +514,7 @@ document.querySelector('.note').addEventListener('click', () => {
     `
     setTimeout(() => {
         document.querySelector('.notes').classList.add('open')
-    }, 10)
+    }, 100)
 })
 
 
@@ -679,7 +679,7 @@ document.querySelector('.featureOneButton').addEventListener('click', () => {
         document.querySelector('.featureOne').classList.add('open')
         document.querySelector('.featureOne img').classList.add('open')
         document.querySelector('.featureOneButton').classList.add('open')
-    }, 10)
+    }, 100)
 })
 
 document.querySelector('.featureTwoButton').addEventListener('click', () => {
@@ -691,7 +691,7 @@ document.querySelector('.featureTwoButton').addEventListener('click', () => {
         document.querySelector('.featureTwo').classList.add('open')
         document.querySelector('.featureTwo > p').classList.add('open')
         document.querySelector('.featureTwoButton').classList.add('open')
-    }, 10)
+    }, 100)
 })
 
 document.querySelector('.featureThreeButton').addEventListener('click', () => {
@@ -703,7 +703,7 @@ document.querySelector('.featureThreeButton').addEventListener('click', () => {
         document.querySelector('.featureThree').classList.add('open')
         document.querySelector('.featureThree img').classList.add('open')
         document.querySelector('.featureThreeButton').classList.add('open')
-    }, 10)
+    }, 100)
 })
 
 

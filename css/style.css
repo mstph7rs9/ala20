@@ -1759,6 +1759,10 @@ th:last-child span {
     direction: ltr;
 }
 
+.footerCopyright p:last-child span {
+    font-weight: 600;
+}
+
 @media (min-width: 768px) {
     .footer::before {
         animation: rotate 10s linear infinite;
