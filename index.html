@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" href="./images/favicon.ico" sizes="any">
+        <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="/20">
+        <link rel="manifest" href="./manifest.json">
+        <title>على عشرين | حساب المعدل</title>
+        <meta name="description" content="على عشرين | منصة جزائرية لحساب المعدلات في مختلف الأطوار التعليمية ( ابتدائي ، متوسط ، ثانوي )">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="على عشرين | حساب المعدل">
+        <meta property="og:description" content="على عشرين | منصة جزائرية لحساب المعدلات في مختلف الأطوار التعليمية ( ابتدائي ، متوسط ، ثانوي )">
+        <meta property="og:image" content="./images/icon-512-maskable.png">
+        <meta name="twitter:card" content="summary_large_image">
+    </head>
+    <body>
+        <div class="popup">
+            <div class="popupOverlay"></div> 
+            <div class="popupContent">
+                <div class="popupHeader">
+                    <div class="popupLogo">/20</div>
+                    <div class="popupClosed">×</div>
+                </div>
+                <div class="choiceTitle"></div>
+                <div class="choiceContent">
+                    <div class="choiceSide">
+                        <div class="materials"></div>
+                        <div class="sideOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m14 6l-6 6l6 6"/></svg>
+                        </div>
+                    </div>
+                    <div class="inputOutputPoints">
+                        <div class="inputPoints"></div>
+                        <div class="outputPoints">
+                            <div class="downloadNote">
+                                <div id="download" class="download">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m3 16l4.47-4.47a1.81 1.81 0 0 1 2.56 0L14 15.5m1.5 1.5L14 15.5m7 .5l-2.47-2.47a1.81 1.81 0 0 0-2.56 0L14 15.5"/><path d="M21.5 12c0 4.23 0 6.345-1.198 7.747q-.256.3-.555.555C18.345 21.5 16.23 21.5 12 21.5s-6.345 0-7.747-1.198q-.3-.256-.555-.555C2.5 18.345 2.5 16.23 2.5 12s0-6.345 1.198-7.747q.256-.3.555-.555C5.655 2.5 7.77 2.5 12 2.5h1.5"/><path d="M21.5 6.5c-.59.607-2.16 3-3 3s-2.41-2.393-3-3m3 2.5V2.5"/></g></svg>
+                                </div>
+                                <hr>
+                                <div id="note" class="note">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 32 32"><path fill="currentColor" d="M17 22v-8h-4v2h2v6h-3v2h8v-2zM16 8a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 16 8"/><path fill="currentColor" d="M16 30a14 14 0 1 1 14-14a14 14 0 0 1-14 14m0-26a12 12 0 1 0 12 12A12 12 0 0 0 16 4"/></svg>
+                                </div>
+                            </div>
+                            <div class="output">
+                                <h2></h2>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <section class="header">
+            <div class="container">
+                <div class="logoButton">
+                    <a class="logo">/20</a>
+                    <div class="button">
+                        <div class="buttonText">أحسب معدلك الآن</div>
+                        <div class="buttonX"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg></div>
+                    </div>
+                    <div class="menu">
+                        <h3 id="primary">التعليم الإبتدائي</h3> <hr>
+                        <h3 id="middle">التعليم المتوسط</h3> <hr>
+                        <h3 id="secondary">التعليم الثانوي</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="container">
+                <div class="titleDescription">
+                    <h1>/20</h1>
+                    <p><span>على عشرين</span> | منصة جزائرية لحساب المعدلات<br/>في مختلف الأطوار التعليمية</p>
+                </div>
+                <div class="gradesTrack">
+                    <div class="grades"></div>
+                </div>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="container">
+                <div class="featuresCards">
+                    <div class="featureOne">
+                        <div class="featureTitleDescription">
+                            <h2>مصدر موثوق</h2>
+                            <p>كل من : الشعب ، المواد ، المعاملات ، طريقة الحساب ...، كل هذا مصدره <span>القرارات الرسمية</span> الصادرة من وزارة التربية الوطنية.</p>
+                        </div>
+                        <div class="featureOneButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h8v8M5 11h8v8"/></svg>
+                        </div>
+                        <img src="./images/seal.webp" alt="Seal">
+                    </div>
+                    <div class="featureTwoThree">
+                        <div class="featureTwo">
+                            <div class="featureTitleDescription">
+                                <h2>معاينة مباشرة</h2>
+                                <p>منذ <span>أول علامة </span>يتم إدخالها ، تبدأ النتيجة بالظهور ، دون الضغط على أي زر للحساب.</p>
+                            </div>
+                            <p>17.03</p>
+                            <div class="featureTwoButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h8v8M5 11h8v8"/></svg>
+                            </div>
+                        </div>
+                        <div class="featureThree">
+                            <div class="featureTitleDescription">
+                                <h2>كشف النقاط</h2>
+                                <p>بمجرد ملئ النقاط يمكن تحميل كشف النقاط كصورة ذات جودة عالية وتصميم مميز لحفظها <span>كوثيقة رمزية</span> .</p>
+                            </div>
+                            <img src="./images/transcriptOfGradesFull.webp" alt="Transcript of grades full">
+                            <div class="featureThreeButton">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 7h8v8M5 11h8v8"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mobileApp" id="mobileApp">
+            <div class="container">
+                <div class="mobileAppHeader">
+                    <div class="titleDescription">
+                        <h2>تطبيق للهـــــاتف</h2>
+                        <p>قم بتثبيت تطبيق <span>على عشرين</span> على هاتفك ،<br> واستفد من مميزاته بسرعة وكفاءة.</p>
+                    </div>
+                    <div class="buttons">
+                        <div class="button1" id="button1">ثبت الآن</div>
+                        <div class="installOrDownload">
+                            <div class="install">
+                                <h5>1. قد قمت بتثبيت التطبيق مسبقا ، أو أن متصفحك لا يدعم التثبيت المباشر</h5>
+                                <div>طريقة أخرى</div>
+                            </div>
+                            <hr>
+                            <div class="downlad">
+                                <h5>2. توفير البيانات محليا ( يمكن زيارة الموقع عبر الرابط الخاص به بدون نت لكن لن تظهر أيقونة للتطبيق )</h5>
+                                <div>تحميل البيانات</div>
+                            </div>
+                            <p>في حال القيام بكلتا الخطوتين ستظهر أيقونة على الشاشة الرئيسية مع دعم وضع عدم الإتصال بالنت</p>
+                        </div>
+                        <div class="button2">مميزات التطبيق</div>
+                        <div class="mobileAppFeatures">
+                            <p>- وصول سريع من الصفحة الرئيسية.</p>
+                            <p>- العمل على مختلف المنصات ( Android, IOS, Windows, macOS, Linux, HarmonyOS ).</p>
+                            <p>- يمكن للتطبيق العمل بدون إتصال بالنت بكل قدراته.</p>
+                            <p>- بدون أي إعلانات.</p>
+                            <p>- التحديث التلقائي بمجرد التثبيت ( يرجى الإتصال بالنت بشكل دوري لتلقي التحديثات ).</p>
+                            <p>- حجم التطبيق لا يتعدى 3MB</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="./images/mobileApp.webp" alt="Mobile app">
+            </div>
+        </section>
+        <section class="reportAProblem" id="reportAProblem">
+            <div class="container">
+                <form class="report">
+                    <div class="reportHeader">
+                        <h3>إبلاغ عن مشكلة / إقتراح</h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m2.5 6l6.568 3.917c2.421 1.444 3.444 1.444 5.865 0L21.5 6"/><path d="M16 18.991C15.4 19 14.737 19 14 19h-4c-3.77 0-5.656 0-6.828-1.172S2 14.771 2 11s0-5.657 1.172-6.828S6.23 3 10.001 3h4c3.77 0 5.656 0 6.828 1.172c1.063 1.063 1.161 2.714 1.17 5.828M20 17v-4m.126 7.75H20m.25 0a.25.25 0 1 1-.5 0a.25.25 0 0 1 .5 0"/></g></svg>
+                    </div>
+                    <div class="reportBody">
+                        <input type="email" placeholder="البريد الإلكتروني ( للرد )" class="userEmail" required>
+                        <textarea placeholder="اكتب هنا ..." class="userMessage" required></textarea>
+                        <button type='submit' class="sendButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m8.87 6.133l5.863-1.938c3.3-1.09 4.95-1.636 5.825-.76c.875.874.33 2.524-.761 5.825l-1.937 5.862c-1.236 3.74-1.854 5.61-2.98 5.838a2 2 0 0 1-.725.013c-1.136-.19-1.842-2.037-3.253-5.732c-.27-.703-.404-1.055-.645-1.328a2 2 0 0 0-.178-.178c-.273-.241-.624-.376-1.328-.644c-3.695-1.412-5.542-2.118-5.732-3.254c-.04-.24-.035-.486.013-.724c.228-1.126 2.098-1.744 5.838-2.98m3.93 5.054l2.698-2.698"/></svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <div class="footerHeader">
+                    <div class="footerLogo">
+                        <a href="#">/20</a>
+                        <p><span>على عشرين</span> | حساب المعدل</p>
+                    </div>
+                    <div class="footerLinks">
+                        <a href="#">الرئيسية</a>
+                        <a href="#features">مميزات الموقع</a>
+                        <a href="#mobileApp">تطبيق للهاتف</a>
+                        <a href="#reportAProblem">إبلاغ عن مشكلة / إقتراح</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footerCopyright">
+                    <p>جميع الحقوق محفوظة © <span>2026</span></p>
+                    <p>Designed and programmed by Mstph Rs ©</p>
+                </div>
+            </div>
+        </section>
+    
+        <div class="transcriptOfGrades"></div>
+        
+        <script type="module" src="./js/script.js" defer></script>
+    
+    </body>
+</html>
