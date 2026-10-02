@@ -1,4 +1,4 @@
-const cacheName = 'ala20-v0.1.0'
+const cacheName = 'ala20-v0.1.1'
 
 const AssetsToCache = [
   './',
